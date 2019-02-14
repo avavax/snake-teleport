@@ -1,0 +1,111 @@
+* {
+	
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, sans-serif;
+}
+
+.wrapper {
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.fields {
+	width: 100%;	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: auto;
+}
+
+.walls {
+	border: 2px solid #444;
+}
+
+.field {
+	display: flex;
+
+}
+
+.cell {
+	border: 1px dotted #000;
+	height: 100%;
+	background-color: #eee;
+	overflow: hidden;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.cell img {
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+
+.controls {
+	padding-left: 10%;
+	padding-right: 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+	margin-bottom: 50px;
+}
+
+button {
+	font-size: 18px;
+	padding: 15px 30px;
+	border: 1px solid transparent;
+	background-color: #000;
+	color: white;
+	border-radius: 5px;
+	margin-right: 20px;
+	transition: all 0.3s;
+	cursor: pointer;
+	outline: none;
+}
+
+button:hover {
+	background-color: #555;
+}
+
+.o-button {
+	background-color: #fff;
+	border: 1px solid #000;
+	color: #000;
+}
+
+.o-button:hover {
+	background-color: #fff;
+	border: 1px solid #000;
+	color: #000;
+}
+
+.score {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+@keyframes pulse {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+	transform: rotate(135deg);
+  }
+}
+
+.animation {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
